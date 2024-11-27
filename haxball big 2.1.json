@@ -1,0 +1,86 @@
+{
+
+	"name" : "AHA Big v2.1",
+
+	"width" : 600,
+
+	"height" : 270,
+
+	"bg" : { "type" : "grass", "width" : 550, "height" : 240, "kickOffRadius" : 80 },
+
+	"vertexes" : [
+		/* 0 */ { "x" : -550, "y" : 240, "cMask" : ["ball" ] },
+		/* 1 */ { "x" : -550, "y" : 80, "cMask" : ["ball" ] },
+		/* 2 */ { "x" : -550, "y" : -80, "cMask" : ["ball" ] },
+		/* 3 */ { "x" : -550, "y" : -240, "cMask" : ["ball" ] },
+		/* 4 */ { "x" : 550, "y" : 240, "cMask" : ["ball" ] },
+		/* 5 */ { "x" : 550, "y" : 80, "cMask" : ["ball" ] },
+		/* 6 */ { "x" : 550, "y" : -80, "cMask" : ["ball" ] },
+		/* 7 */ { "x" : 550, "y" : -240, "cMask" : ["ball" ] },
+		/* 8 */ { "x" : 0, "y" : 270, "bCoef" : 0.1, "cMask" : ["red","blue" ], "cGroup" : ["redKO","blueKO" ] },
+		/* 9 */ { "x" : 0, "y" : 80, "bCoef" : 0.1, "cMask" : ["red","blue" ], "cGroup" : ["redKO","blueKO" ] },
+		/* 10 */ { "x" : 0, "y" : -80, "bCoef" : 0.1, "cMask" : ["red","blue" ], "cGroup" : ["redKO","blueKO" ] },
+		/* 11 */ { "x" : 0, "y" : -270, "bCoef" : 0.1, "cMask" : ["red","blue" ], "cGroup" : ["redKO","blueKO" ] },
+		/* 12 */ { "x" : -560, "y" : -80, "bCoef" : 0.1, "cMask" : ["ball" ] },
+		/* 13 */ { "x" : -580, "y" : -60, "bCoef" : 0.1, "cMask" : ["ball" ] },
+		/* 14 */ { "x" : -580, "y" : 60, "bCoef" : 0.1, "cMask" : ["ball" ] },
+		/* 15 */ { "x" : -560, "y" : 80, "bCoef" : 0.1, "cMask" : ["ball" ] },
+		/* 16 */ { "x" : 560, "y" : -80, "bCoef" : 0.1, "cMask" : ["ball" ] },
+		/* 17 */ { "x" : 580, "y" : -60, "bCoef" : 0.1, "cMask" : ["ball" ] },
+		/* 18 */ { "x" : 580, "y" : 60, "bCoef" : 0.1, "cMask" : ["ball" ] },
+		/* 19 */ { "x" : 560, "y" : 80, "bCoef" : 0.1, "cMask" : ["ball" ] }
+
+	],
+
+	"segments" : [
+		{ "v0" : 0, "v1" : 1, "vis" : false, "cMask" : ["ball" ], "bias" : -40 },
+		{ "v0" : 2, "v1" : 3, "vis" : false, "cMask" : ["ball" ], "bias" : -40 },
+		{ "v0" : 4, "v1" : 5, "vis" : false, "cMask" : ["ball" ], "bias" : 40 },
+		{ "v0" : 6, "v1" : 7, "vis" : false, "cMask" : ["ball" ], "bias" : 40 },
+		{ "v0" : 13, "v1" : 12, "curve" : 89.99999999999999, "bCoef" : 0.1, "cMask" : ["ball" ], "curveF" : 1.0000000000000002 },
+		{ "v0" : 13, "v1" : 14, "bCoef" : 0.1, "cMask" : ["ball" ] },
+		{ "v0" : 15, "v1" : 14, "curve" : 89.99999999999999, "bCoef" : 0.1, "cMask" : ["ball" ], "curveF" : 1.0000000000000002 },
+		{ "v0" : 16, "v1" : 17, "curve" : 89.99999999999999, "bCoef" : 0.1, "cMask" : ["ball" ], "curveF" : 1.0000000000000002 },
+		{ "v0" : 17, "v1" : 18, "bCoef" : 0.1, "cMask" : ["ball" ] },
+		{ "v0" : 18, "v1" : 19, "curve" : 89.99999999999999, "bCoef" : 0.1, "cMask" : ["ball" ], "curveF" : 1.0000000000000002 },
+		{ "v0" : 8, "v1" : 9, "vis" : false, "bCoef" : 0.1, "cMask" : ["red","blue" ], "cGroup" : ["redKO","blueKO" ] },
+		{ "v0" : 9, "v1" : 10, "curve" : 180, "vis" : false, "bCoef" : 0.1, "cMask" : ["red","blue" ], "cGroup" : ["blueKO" ], "curveF" : 6.123233995736766e-17 },
+		{ "v0" : 10, "v1" : 9, "curve" : 180, "vis" : false, "bCoef" : 0.1, "cMask" : ["red","blue" ], "cGroup" : ["redKO" ], "curveF" : 6.123233995736766e-17 },
+		{ "v0" : 10, "v1" : 11, "vis" : false, "bCoef" : 0.1, "cMask" : ["red","blue" ], "cGroup" : ["redKO","blueKO" ] }
+
+	],
+
+	"planes" : [
+		{ "normal" : [0,1 ], "dist" : -240, "cMask" : ["ball" ] },
+		{ "normal" : [0,-1 ], "dist" : -240, "cMask" : ["ball" ] },
+		{ "normal" : [0,1 ], "dist" : -270, "bCoef" : 0.1 },
+		{ "normal" : [0,-1 ], "dist" : -270, "bCoef" : 0.1 },
+		{ "normal" : [1,0 ], "dist" : -600, "bCoef" : 0.1 },
+		{ "normal" : [-1,0 ], "dist" : -600, "bCoef" : 0.1 }
+
+	],
+
+	"goals" : [
+		{ "p0" : [-550,80 ], "p1" : [-550,-80 ], "team" : "red" },
+		{ "p0" : [550,80 ], "p1" : [550,-80 ], "team" : "blue" }
+
+	],
+
+	"discs" : [
+		{ "radius" : 9.3, "invMass" : 1.12, "bCoef" : 0.45, "cGroup" : ["ball","kick","score" ], "damping" : 0.9893 },
+		{ "radius" : 8, "invMass" : 0, "pos" : [-550,80 ], "color" : "FFCCCC" },
+		{ "radius" : 8, "invMass" : 0, "pos" : [-550,-80 ], "color" : "FFCCCC" },
+		{ "radius" : 8, "invMass" : 0, "pos" : [550,80 ], "color" : "CCCCFF" },
+		{ "radius" : 8, "invMass" : 0, "pos" : [550,-80 ], "color" : "CCCCFF" }
+
+	],
+
+	"playerPhysics" : {
+		
+
+	},
+
+	"ballPhysics" : "disc0",
+
+	"spawnDistance" : 350
+}
