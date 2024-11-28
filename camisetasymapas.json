@@ -1,11 +1,17 @@
 {
-  "camisetas": {
-    "team1": "/colors red 60 000000 DDB578 B59462 91774F",
-    "team2": "/colors blue 60 DDB578 211F1F 302E2E 292626"
-  },
+  "camisetas": [
+    {
+      "name": "Rojo",
+      "colors": "red 60 000000 DDB578 B59462 91774F"
+    },
+    {
+      "name": "Azul",
+      "colors": "blue 60 DDB578 211F1F 302E2E 292626"
+    }
+  ],
   "mapas": [
-    "Big Easy.hbs",
-    "AHA Big v2.1.hbs",
-    "AHA Classic (Training) v2.1.hbs"
+    "https://raw.githubusercontent.com/seb1404/host-haxball-owo/main/Big_Easy.hbs",
+    "https://raw.githubusercontent.com/seb1404/host-haxball-owo/main/AHA-Big-v2.1.hbs",
+    "https://raw.githubusercontent.com/seb1404/host-haxball-owo/main/AHA-Classic-Training-v2.1.hbs"
   ]
 }
